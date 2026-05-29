@@ -150,10 +150,15 @@ const renderProject = (node) => {
 // 4. BOOTSTRAP
 // ==========================================
 document.addEventListener('DOMContentLoaded', async () => {
+    console.log('BOOT OK');
+    console.log(window.location.pathname);
     await fetchCurriculum();
     const path = window.location.pathname;
 
-    if (path.includes('index.html')) {
+    if (
+    path === '/' ||
+    path.includes('index.html')
+) {
         document.getElementById('onboarding-form').onsubmit = (e) => {
             e.preventDefault();
             saveUser({ name: document.getElementById('user-name').value });
