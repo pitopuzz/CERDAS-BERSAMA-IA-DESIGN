@@ -1,0 +1,142 @@
+/* CERDAS BERSAMA - Production Ready Styles */
+/* Mobile-first, semantic, and highly accessible */
+
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --primary-disabled: #94a3b8;
+    --success: #10b981;
+    --error: #e11d48;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text: #0f172a;
+    --text-muted: #475569;
+    --border: #e2e8f0;
+    --locked: #f1f5f9;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding-bottom: 3rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 1.25rem; }
+
+/* Navigation */
+.global-nav { 
+    background: var(--card-bg); 
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Card System */
+.card { 
+    background: var(--card-bg); 
+    border: 1px solid var(--border); 
+    border-radius: 12px; 
+    padding: 1.5rem; 
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Roadmap Grid & States */
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.node-card {
+    display: block;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.node-card:hover:not(.state-locked) { border-color: var(--primary); transform: translateY(-2px); }
+
+.state-locked { background: var(--locked); opacity: 0.7; cursor: not-allowed; border-style: dashed; }
+.state-current { border-color: var(--primary); background: #eff6ff; }
+.state-completed { border-color: var(--success); }
+
+/* Buttons & Interactive */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+.btn:hover:not(:disabled) { background-color: var(--primary-hover); }
+.btn:disabled { background-color: var(--primary-disabled); cursor: not-allowed; }
+
+/* Form Elements */
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    margin-top: 0.25rem;
+}
+
+/* Knowledge Check Styling */
+.kc-option {
+    display: block;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.kc-option:hover { border-color: var(--primary); background: #eff6ff; }
+
+/* Media & Content */
+img { max-width: 100%; height: auto; border-radius: 8px; margin: 1rem 0; }
+
+.content-callout {
+    padding: 1.25rem;
+    border-left: 4px solid var(--primary);
+    background: #eff6ff;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+}
+
+/* Empty States */
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    border: 2px dashed var(--border);
+    border-radius: 12px;
+    color: var(--text-muted);
+}
+
+/* Mobile UX */
+@media (max-width: 600px) {
+    .btn { padding: 1rem; }
+    .card { border-radius: 0; border-left: none; border-right: none; }
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.mt-2 { margin-top: 2rem; }
