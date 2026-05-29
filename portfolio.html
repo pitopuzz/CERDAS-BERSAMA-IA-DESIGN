@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - CERDAS BERSAMA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header class="global-nav">
+        <div class="nav-container container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
+            <strong style="color: #2563eb; font-size: 1.2rem;">CERDAS BERSAMA</strong>
+            <nav>
+                <ul style="display: flex; gap: 1rem; list-style: none; margin: 0; padding: 0;">
+                    <li><a href="dashboard.html" style="text-decoration: none; color: #475569;">Dashboard</a></li>
+                    <li><a href="roadmap.html" style="text-decoration: none; color: #475569;">Roadmap</a></li>
+                    <li><a href="portfolio.html" style="text-decoration: none; font-weight: bold; color: #0f172a;">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="max-width: 800px; margin: 2rem auto; padding: 0 1rem;">
+        <header style="margin-bottom: 2rem;">
+            <h1 style="margin-bottom: 0.5rem;">My AI Products</h1>
+            <p style="color: #475569; font-size: 1.1rem;">A collection of all the product ideas and mega-prompts you have built.</p>
+        </header>
+
+        <section id="portfolio-empty" style="display: none; text-align: center; padding: 3rem 1rem; border: 2px dashed #cbd5e1; border-radius: 8px; background-color: #f8fafc;">
+            <h2 style="color: #0f172a;">You haven't built anything yet!</h2>
+            <p style="color: #475569; margin-bottom: 2rem;">Complete your first project to see it appear here.</p>
+            <a href="roadmap.html" class="btn" style="padding: 0.75rem 1.5rem; background-color: #2563eb; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">Go to Roadmap</a>
+        </section>
+
+        <section id="portfolio-container" style="display: flex; flex-direction: column; gap: 2rem;">
+            </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson - CERDAS BERSAMA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header class="global-nav">
+        <div class="nav-container container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
+            <a href="roadmap.html" style="text-decoration: none; color: #475569; font-weight: bold;">&larr; Back to Roadmap</a>
+        </div>
+    </header>
+
+    <main class="container" style="max-width: 700px; margin: 2rem auto; padding: 0 1rem;">
+        <article class="card" style="padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0; background: white;">
+            <h1 id="lesson-title" style="margin-top: 0; margin-bottom: 1.5rem; color: #0f172a;">Loading Lesson...</h1>
+            
+            <section id="lesson-content-container" style="font-size: 1.1rem; line-height: 1.7; color: #334155;">
+                </section>
+            
+            <section id="knowledge-check-container" style="display: none; background-color: #f8fafc; padding: 1.5rem; border-radius: 8px;">
+                <fieldset style="border: none; padding: 0; margin: 0;">
+                    <legend id="kc-question-text" style="font-size: 1.1rem; color: #0f172a; margin-bottom: 1rem;"></legend>
+                    <div id="kc-options-container" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        </div>
+                </fieldset>
+                
+                <div id="kc-feedback-msg" style="display: none; font-weight: bold;"></div>
+                
+                <button id="kc-submit-btn" class="btn" style="margin-top: 1.5rem; padding: 0.75rem 1.5rem; background-color: #0f172a; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Submit Answer</button>
+            </section>
+
+            <div style="margin-top: 2rem;">
+                <button id="complete-btn" class="btn" style="display: none; padding: 0.75rem 1.5rem; background-color: #10b981; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Continue to Next Step</button>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
