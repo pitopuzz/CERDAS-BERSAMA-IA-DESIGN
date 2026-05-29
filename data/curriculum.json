@@ -1,0 +1,158 @@
+{
+"modules": [
+{
+"id": "mod_1",
+"title": "Modul 1: Pola Pikir AI",
+"nodes": [
+{
+"id": "node_1_1",
+"type": "lesson",
+"title": "Apa Itu AI?",
+"contentBlocks": [
+{ "type": "text", "value": "AI atau Kecerdasan Buatan mungkin terdengar seperti sihir, tapi sebenarnya AI hanyalah alat yang memprediksi pola berdasarkan data." },
+{ "type": "text", "value": "Anda tidak perlu menjadi programmer atau ahli matematika. AI adalah teman kerja yang cepat dan siap membantu, asalkan Anda memberi instruksi yang tepat." }
+],
+"knowledgeCheck": {
+"question": "Apa cara terbaik untuk memahami AI modern?",
+"options": ["Alat yang melakukan segalanya sendiri", "Alat yang bekerja cepat dan butuh instruksi jelas", "Program rumit yang hanya dimengerti pengembang"],
+"correctIndex": 1,
+"hint": "Ingat, AI adalah alat yang membutuhkan arahan Anda."
+}
+},
+{
+"id": "node_1_2",
+"type": "lesson",
+"title": "Melihat Masalah di Sekitar",
+"contentBlocks": [
+{ "type": "text", "value": "Produk AI terbaik tidak dimulai dari teknologinya, tapi dari masalah yang ada. Perhatikan keseharian Anda: apa yang membosankan, berulang, atau memakan waktu?" }
+],
+"knowledgeCheck": {
+"question": "Dari mana sebaiknya kita memulai saat ingin membangun produk AI?",
+"options": ["Mencari teknologi terbaru", "Mencari masalah yang membosankan atau berulang", "Membuat aplikasi tanpa tujuan"],
+"correctIndex": 1,
+"hint": "Produk hebat selalu menjawab kebutuhan nyata."
+}
+},
+{
+"id": "node_1_3",
+"type": "lesson",
+"title": "Kemampuan Utama AI",
+"contentBlocks": [
+{ "type": "text", "value": "AI sangat ahli dalam empat hal: Merangkum, Menghasilkan ide, Menyusun draf tulisan, dan Mengubah format data." }
+],
+"knowledgeCheck": {
+"question": "Mana yang merupakan kemampuan utama AI?",
+"options": ["Memperbaiki mesin fisik", "Mengubah catatan berantakan jadi ringkasan", "Membaca pikiran pengguna"],
+"correctIndex": 1,
+"hint": "AI ahli dalam mengolah informasi."
+}
+},
+{
+"id": "node_1_4",
+"type": "project",
+"title": "Proyek: Identifikasi Masalah",
+"template": {
+"instructions": "Pilih satu masalah dalam keseharian Anda dan tentukan bagaimana AI bisa membantu.",
+"fields": [
+{ "id": "masalah", "label": "Apa masalahnya?", "type": "textarea", "placeholder": "Contoh: Mengatur menu makan keluarga setiap minggu." }
+]
+}
+}
+]
+},
+{
+"id": "mod_2",
+"title": "Modul 2: Seni Memberi Instruksi (Prompting)",
+"nodes": [
+{
+"id": "node_2_1",
+"type": "lesson",
+"title": "Instruksi yang Jelas",
+"contentBlocks": [
+{ "type": "text", "value": "Instruksi yang Anda berikan kepada AI disebut 'Prompt'. Jika AI adalah mesin, prompt adalah kemudinya. Tanpa arahan, AI akan menebak-nebak." }
+],
+"knowledgeCheck": {
+"question": "Mengapa prompt 'Tulis cerita' dianggap kurang baik?",
+"options": ["Karena terlalu pendek", "Karena AI harus menebak konteks dan tujuan Anda", "Karena AI tidak bisa menulis cerita"],
+"correctIndex": 1,
+"hint": "Instruksi yang tidak spesifik akan membuat hasil tidak sesuai harapan."
+}
+},
+{
+"id": "node_2_2",
+"type": "lesson",
+"title": "Memberi Peran",
+"contentBlocks": [
+{ "type": "text", "value": "Rahasia mendapatkan hasil bagus adalah memberi peran. Contoh: 'Berperanlah sebagai guru sains yang menyenangkan, jelaskan tentang gravitasi'." }
+]
+},
+{
+"id": "node_2_3",
+"type": "lesson",
+"title": "Tugas dan Batasan",
+"contentBlocks": [
+{ "type": "text", "value": "Selain peran, berikan tugas spesifik dan batasan. Contoh: 'Berikan 3 ide menu makan malam, jangan gunakan bahan yang digoreng'." }
+]
+},
+{
+"id": "node_2_4",
+"type": "lesson",
+"title": "Format Hasil",
+"contentBlocks": [
+{ "type": "text", "value": "Anda bisa meminta AI mengatur hasil dalam bentuk tabel, daftar poin, atau format lainnya agar mudah dibaca." }
+]
+},
+{
+"id": "node_2_5",
+"type": "project",
+"title": "Proyek: Membuat Mega-Prompt",
+"template": {
+"instructions": "Tuliskan Mega-Prompt lengkap Anda menggunakan peran, tugas, batasan, dan format.",
+"fields": [
+{ "id": "prompt", "label": "Tuliskan prompt Anda di sini:", "type": "textarea", "placeholder": "Berperan sebagai... tugas saya adalah... batasannya adalah... buat formatnya dalam bentuk..." }
+]
+}
+}
+]
+},
+{
+"id": "mod_3",
+"title": "Modul 3: Uji Coba & Perbaikan",
+"nodes": [
+{
+"id": "node_3_1",
+"type": "lesson",
+"title": "Uji Coba Pertama",
+"contentBlocks": [
+{ "type": "text", "value": "Tempelkan prompt Anda ke AI. Ingat, kegagalan di percobaan pertama itu normal. Justru dari situlah kita belajar memperbaiki instruksi." }
+]
+},
+{
+"id": "node_3_2",
+"type": "lesson",
+"title": "Iterasi (Perbaikan)",
+"contentBlocks": [
+{ "type": "text", "value": "Jika hasil AI kurang pas, jangan menyalahkan AI. Periksa bagian mana dari instruksi Anda yang masih kurang jelas. Tambahkan batasan atau detail baru." }
+],
+"knowledgeCheck": {
+"question": "Apa yang harus dilakukan jika hasil AI belum sesuai keinginan?",
+"options": ["Menyerah", "Memperjelas instruksi dan batasan (Iterasi)", "Menyalahkan AI"],
+"correctIndex": 1,
+"hint": "Proses memperbaiki instruksi disebut iterasi."
+}
+},
+{
+"id": "node_3_3",
+"type": "project",
+"title": "Proyek: Perbaikan Terakhir",
+"template": {
+"instructions": "Setelah menguji prompt Anda, apa satu hal yang ingin Anda tambahkan agar hasilnya lebih baik?",
+"fields": [
+{ "id": "perbaikan", "label": "Tulis perbaikan Anda:", "type": "textarea", "placeholder": "Saya akan menambahkan aturan bahwa..." }
+]
+}
+}
+]
+}
+]
+}
